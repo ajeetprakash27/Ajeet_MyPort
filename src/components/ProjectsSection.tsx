@@ -12,6 +12,7 @@ const projects = [
     image: projectAirline,
     technologies: ['PHP', 'MySQL', 'HTML', 'CSS', 'JavaScript'],
     category: 'Full-Stack',
+    github: 'https://github.com/ajeetprakash27/airline-management-system',
   },
   {
     title: 'Human Face Recognition & Detection',
@@ -19,6 +20,7 @@ const projects = [
     image: projectFace,
     technologies: ['Python', 'OpenCV', 'NumPy', 'Machine Learning'],
     category: 'AI/ML',
+    github: 'https://github.com/ajeetprakash27/Face--Detection',
   },
   {
     title: 'Deep Research Agent',
@@ -26,6 +28,7 @@ const projects = [
     image: projectResearch,
     technologies: ['Python', 'Streamlit', 'OpenAI Agents', 'Firecrawl'],
     category: 'AI Agent',
+    github: 'https://github.com/ajeetprakash27/Deep-Research-Agent-with-OpenAI-Agents-SDK-and-Firecrawl',
   },
   {
     title: 'Blog to Podcast Agent',
@@ -33,6 +36,7 @@ const projects = [
     image: projectPodcast,
     technologies: ['Python', 'Streamlit', 'GPT-4o', 'ElevenLabs'],
     category: 'AI Agent',
+    github: 'https://github.com/ajeetprakash27/Blog_to_Podcast',
   },
 ];
 
@@ -92,13 +96,17 @@ const ProjectsSection = () => {
 
                 {/* Actions */}
                 <div className="flex gap-3 pt-2">
-                  <Button variant="outline" size="sm" className="flex-1">
-                    <Github size={16} className="mr-2" />
-                    Code
+                  <Button variant="outline" size="sm" className="flex-1" asChild>
+                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                      <Github size={16} className="mr-2" />
+                      Code
+                    </a>
                   </Button>
-                  <Button variant="default" size="sm" className="flex-1">
-                    <ExternalLink size={16} className="mr-2" />
-                    Demo
+                  <Button variant="default" size="sm" className="flex-1" asChild>
+                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink size={16} className="mr-2" />
+                      View
+                    </a>
                   </Button>
                 </div>
               </div>
