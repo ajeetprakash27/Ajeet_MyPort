@@ -1,4 +1,4 @@
-import { Briefcase, Calendar, MapPin } from 'lucide-react';
+import { Briefcase, Calendar, MapPin, Code, Database, Layout, Server } from 'lucide-react';
 
 const experiences = [
   {
@@ -7,12 +7,18 @@ const experiences = [
     location: 'Remote',
     period: 'April 2025 – May 2025',
     description: [
-      'Assisted in building responsive web applications using HTML, CSS, JavaScript, and React.js',
-      'Contributed to both frontend and backend development',
-      'Worked with SQL and modern development tools (VS Code)',
-      'Improved UI components and optimized performance',
+      'Developed and maintained responsive web applications using HTML, CSS, JavaScript, and React.js',
+      'Contributed to both frontend and backend development workflows',
+      'Worked with SQL databases and modern development tools',
+      'Enhanced UI components and optimized application performance',
     ],
-    technologies: ['HTML', 'CSS', 'JavaScript', 'React.js', 'SQL', 'VS Code'],
+    tools: [
+      { name: 'VS Code', icon: Code },
+      { name: 'SQL', icon: Database },
+      { name: 'Frontend', icon: Layout },
+      { name: 'Backend', icon: Server },
+    ],
+    technologies: ['HTML', 'CSS', 'JavaScript', 'React.js', 'SQL'],
   },
 ];
 
@@ -29,62 +35,73 @@ const ExperienceSection = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full" />
         </div>
 
-        {/* Timeline */}
-        <div className="relative max-w-3xl mx-auto">
-          {/* Timeline line */}
-          <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-primary via-secondary to-primary/0 transform md:-translate-x-1/2" />
-
+        {/* Experience Card - Centered Layout */}
+        <div className="max-w-4xl mx-auto">
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className={`relative pl-8 md:pl-0 pb-12 ${
-                index % 2 === 0 ? 'md:pr-8 md:text-right' : 'md:pl-8 md:ml-1/2'
-              }`}
+              className="glass-card p-8 sm:p-10 hover:neon-border transition-all duration-300"
             >
-              {/* Timeline dot */}
-              <div className="absolute left-0 md:left-1/2 w-4 h-4 rounded-full bg-primary neon-glow transform md:-translate-x-1/2 -translate-y-1" />
-
-              {/* Content card */}
-              <div className={`glass-card p-6 sm:p-8 hover:neon-border transition-all duration-300 ${
-                index % 2 === 0 ? 'md:mr-8' : 'md:ml-8'
-              }`}>
-                <div className={`flex items-center gap-3 mb-4 ${index % 2 === 0 ? 'md:justify-end' : ''}`}>
-                  <div className="p-2 rounded-lg bg-primary/10 text-primary">
-                    <Briefcase size={20} />
+              {/* Header */}
+              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-6">
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-xl bg-gradient-to-br from-primary/20 to-secondary/20 text-primary shrink-0">
+                    <Briefcase size={28} />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-foreground">{exp.title}</h3>
-                    <p className="text-primary font-medium">{exp.company}</p>
+                    <h3 className="text-2xl font-bold text-foreground">{exp.title}</h3>
+                    <p className="text-lg text-primary font-semibold">{exp.company}</p>
                   </div>
                 </div>
-
-                <div className={`flex flex-wrap gap-4 text-sm text-muted-foreground mb-4 ${
-                  index % 2 === 0 ? 'md:justify-end' : ''
-                }`}>
-                  <span className="flex items-center gap-1">
-                    <Calendar size={14} />
+                <div className="flex flex-wrap gap-3 text-sm text-muted-foreground sm:text-right">
+                  <span className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-muted/50">
+                    <Calendar size={14} className="text-primary" />
                     {exp.period}
                   </span>
-                  <span className="flex items-center gap-1">
-                    <MapPin size={14} />
+                  <span className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-muted/50">
+                    <MapPin size={14} className="text-primary" />
                     {exp.location}
                   </span>
                 </div>
+              </div>
 
-                <ul className={`space-y-2 mb-4 ${index % 2 === 0 ? 'md:text-right' : ''}`}>
+              {/* Tools Used */}
+              <div className="mb-6">
+                <h4 className="text-sm font-medium text-muted-foreground mb-3">Tools & Technologies Used</h4>
+                <div className="flex flex-wrap gap-3">
+                  {exp.tools.map((tool) => (
+                    <div
+                      key={tool.name}
+                      className="flex items-center gap-2 px-4 py-2 rounded-lg bg-muted/30 border border-border/50 hover:border-primary/50 transition-colors"
+                    >
+                      <tool.icon size={16} className="text-primary" />
+                      <span className="text-sm font-medium text-foreground">{tool.name}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Responsibilities */}
+              <div className="mb-6">
+                <h4 className="text-sm font-medium text-muted-foreground mb-3">Key Responsibilities</h4>
+                <ul className="space-y-3">
                   {exp.description.map((item, i) => (
-                    <li key={i} className="text-muted-foreground text-sm flex items-start gap-2">
-                      <span className={`text-primary mt-1.5 ${index % 2 === 0 ? 'md:order-2' : ''}`}>•</span>
+                    <li key={i} className="flex items-start gap-3 text-muted-foreground">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
                       <span>{item}</span>
                     </li>
                   ))}
                 </ul>
+              </div>
 
-                <div className={`flex flex-wrap gap-2 ${index % 2 === 0 ? 'md:justify-end' : ''}`}>
+              {/* Tech Stack */}
+              <div>
+                <h4 className="text-sm font-medium text-muted-foreground mb-3">Tech Stack</h4>
+                <div className="flex flex-wrap gap-2">
                   {exp.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/30"
+                      className="px-3 py-1.5 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/30"
                     >
                       {tech}
                     </span>
