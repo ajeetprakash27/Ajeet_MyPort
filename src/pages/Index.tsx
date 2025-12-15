@@ -1,4 +1,7 @@
+import { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { AnimatePresence } from 'framer-motion';
+import WelcomeSplash from '@/components/WelcomeSplash';
 import ParticleBackground from '@/components/ParticleBackground';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
@@ -11,8 +14,16 @@ import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 
 const Index = () => {
+  const [showSplash, setShowSplash] = useState(true);
+
   return (
     <>
+      <AnimatePresence mode="wait">
+        {showSplash && (
+          <WelcomeSplash onComplete={() => setShowSplash(false)} />
+        )}
+      </AnimatePresence>
+
       <Helmet>
         <title>Ajeet Prakash Pandey | Full-Stack Developer & AI/ML Engineer</title>
         <meta 
