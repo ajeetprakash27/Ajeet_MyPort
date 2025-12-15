@@ -9,6 +9,20 @@ const certificates = [
     color: 'from-blue-500 to-cyan-500',
   },
   {
+    title: 'Google Cloud Study Jam',
+    issuer: 'Google Developer Groups',
+    year: '2025',
+    tags: ['GDSC', 'Cloud'],
+    color: 'from-blue-500 to-cyan-500',
+  },
+  {
+    title: 'IBM Datathon',
+    issuer: 'IBM',
+    year: '2025',
+    tags: ['ML', 'IBM', 'Data Analytics'],
+    color: 'from-blue-500 to-cyan-500',
+  },
+  {
     title: 'Artificial Intelligence',
     issuer: 'LinkedIn',
     year: '2025',
