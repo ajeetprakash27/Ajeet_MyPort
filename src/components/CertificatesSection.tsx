@@ -8,6 +8,13 @@ const certificates = [
     tags: ['AI', 'Cloud', 'Azure'],
     color: 'from-blue-500 to-cyan-500',
   },
+   {
+    title: 'AI for Bharat (AWS)',
+    issuer: 'Hack2skill',
+    year: '2025',
+    tags: ['AI', 'Machine Learning','AWS','Bedrock'],
+    color: 'from-purple-500 to-pink-500',
+  },
   {
     title: 'Google Cloud Study Jam',
     issuer: 'Google Developer Groups',
