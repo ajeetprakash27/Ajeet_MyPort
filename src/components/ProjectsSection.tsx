@@ -21,7 +21,7 @@ const projects = [
     description: 'An interactive chess game where two AI agents powered by OpenAI GPT-4o-mini play against each other using the AutoGen framework.',
     image: projectAichess,
     technologies: ['Python'],
-    category: 'Full-Stack', 'AI/ML',
+    category: ['Full-Stack', 'AI/ML'],
     github: 'https://github.com/ajeetprakash27/Chess-Game',
   },
   {
