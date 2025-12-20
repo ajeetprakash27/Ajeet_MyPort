@@ -7,6 +7,22 @@ import projectPodcast from '@/assets/project-podcast.jpg';
 
 const projects = [
   {
+    title: 'Medical Imaging Diagnosis Agent',
+    description: 'An AI-powered web application for analyzing medical imaging data using advanced computer vision and radiological expertise. Built with Streamlit, Google's Gemini AI, and Agno framework.',
+    image: projectAimedical,
+    technologies: ['Python'],
+    category: 'AI/ML',
+    github: 'https://github.com/ajeetprakash27/Medical-Imaging-Diagnosis-Agent.git',
+  },
+  {
+    title: 'AI Chess Agent',
+    description: 'An interactive chess game where two AI agents powered by OpenAI's GPT-4o-mini play against each other using the AutoGen framework. Built with Streamlit for an intuitive web interface.',
+    image: projectAichess,
+    technologies: ['Python],
+    category: 'Full-Stack','AI/ML',
+    github: 'https://github.com/ajeetprakash27/Chess-Game.git',
+  },
+  {
     title: 'Airline Reservation System',
     description: 'Complete airline ticket booking, search, and management system with secure login authentication, real-time filters, and e-ticket generation. Features admin and client dashboards for operational efficiency.',
     image: projectAirline,
