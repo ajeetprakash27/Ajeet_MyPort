@@ -10,7 +10,7 @@ import projectAimedical from '@/assets/project-aimedical.jpg';
 const projects = [
   {
     title: 'Medical Imaging Diagnosis Agent',
-    description: 'An AI-powered web application for analyzing medical imaging data using advanced computer vision and radiological expertise. Built with Streamlit, Google's Gemini AI, and Agno framework.',
+    description: 'An AI-powered web application for analyzing medical imaging data using advanced computer vision and radiological expertise. Built with Streamlit, Google Gemini AI, and Agno framework.',
     image: projectAimedical,
     technologies: ['Python'],
     category: 'AI/ML',
@@ -18,7 +18,7 @@ const projects = [
   },
   {
     title: 'AI Chess Agent',
-    description: 'An interactive chess game where two AI agents powered by OpenAI's GPT-4o-mini play against each other using the AutoGen framework. Built with Streamlit for an intuitive web interface.',
+    description: 'An interactive chess game where two AI agents powered by OpenAI GPT-4o-mini play against each other using the AutoGen framework.',
     image: projectAichess,
     technologies: ['Python'],
     category: 'Full-Stack', 'AI/ML',
