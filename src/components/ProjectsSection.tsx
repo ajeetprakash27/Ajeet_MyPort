@@ -4,6 +4,8 @@ import projectAirline from '@/assets/project-airline.jpg';
 import projectFace from '@/assets/project-face.jpg';
 import projectResearch from '@/assets/project-research.jpg';
 import projectPodcast from '@/assets/project-podcast.jpg';
+import projectAichess from '@/assets/project-aichess.jpg';
+import projectAimedical from '@/assets/project-aimedical.jpg';
 
 const projects = [
   {
@@ -12,7 +14,7 @@ const projects = [
     image: projectAimedical,
     technologies: ['Python'],
     category: 'AI/ML',
-    github: 'https://github.com/ajeetprakash27/Medical-Imaging-Diagnosis-Agent.git',
+    github: 'https://github.com/ajeetprakash27/Medical-Imaging-Diagnosis-Agent',
   },
   {
     title: 'AI Chess Agent',
@@ -20,7 +22,7 @@ const projects = [
     image: projectAichess,
     technologies: ['Python],
     category: 'Full-Stack','AI/ML',
-    github: 'https://github.com/ajeetprakash27/Chess-Game.git',
+    github: 'https://github.com/ajeetprakash27/Chess-Game',
   },
   {
     title: 'Airline Reservation System',
