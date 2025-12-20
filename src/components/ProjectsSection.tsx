@@ -4,8 +4,8 @@ import projectAirline from '@/assets/project-airline.jpg';
 import projectFace from '@/assets/project-face.jpg';
 import projectResearch from '@/assets/project-research.jpg';
 import projectPodcast from '@/assets/project-podcast.jpg';
-import projectAichess from '@/assets/project-ai-chess.jpg';
-import projectAimedical from '@/assets/project-ai-medical.jpg';
+import projectAichess from '@/assets/project-aichess.jpg';
+import projectAimedical from '@/assets/project-aimedical.jpg';
 
 const projects = [
   {
