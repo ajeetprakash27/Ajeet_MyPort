@@ -20,7 +20,7 @@ const projects = [
     title: 'AI Chess Agent',
     description: 'An interactive chess game where two AI agents powered by OpenAI's GPT-4o-mini play against each other using the AutoGen framework. Built with Streamlit for an intuitive web interface.',
     image: projectAichess,
-    technologies: ['Python],
+    technologies: ['Python'],
     category: 'Full-Stack','AI/ML',
     github: 'https://github.com/ajeetprakash27/Chess-Game',
   },
