@@ -8,11 +8,11 @@ const certificates = [
     tags: ['AI', 'Cloud', 'Azure'],
     color: 'from-blue-500 to-cyan-500',
   },
-   {
+  {
     title: 'AI for Bharat (AWS)',
     issuer: 'Hack2skill',
     year: '2025',
-    tags: ['AI', 'Machine Learning','AWS','Bedrock'],
+    tags: ['AI', 'Machine Learning', 'AWS', 'Bedrock'],
     color: 'from-purple-500 to-pink-500',
   },
   {
@@ -56,6 +56,20 @@ const certificates = [
     year: '2025',
     tags: ['Python', 'Programming'],
     color: 'from-yellow-500 to-orange-500',
+  },
+  {
+    title: 'Mastercard – Cybersecurity Job Simulation',
+    issuer: 'Forage',
+    year: '2024',
+    tags: ['Cybersecurity'],
+    color: 'from-orange-500 to-amber-500',
+  },
+  {
+    title: 'Accenture North America – Data Analytics and Visualization Job Simulation',
+    issuer: 'Forage',
+    year: '2023',
+    tags: ['Data Visualization'],
+    color: 'from-red-500 to-rose-500',
   },
 ];
 
