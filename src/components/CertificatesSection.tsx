@@ -72,6 +72,13 @@ const certificates = [
     color: 'from-orange-500 to-amber-500',
   },
   {
+    title: 'Cognizant - Agile Methodology Job Simulation',
+    issuer: 'Forage',
+    year: '2023',
+    tags: ['Agile Methodology'],
+    color: 'from-purple-500 to-pink-500',
+  },
+  {
     title: 'Accenture North America – Data Analytics and Visualization Job Simulation',
     issuer: 'Forage',
     year: '2023',
