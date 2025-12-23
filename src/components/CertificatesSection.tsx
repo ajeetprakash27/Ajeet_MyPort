@@ -44,6 +44,13 @@ const certificates = [
     color: 'from-green-500 to-emerald-500',
   },
   {
+    title: 'GreekfGreek Workshop',
+    issuer: 'GreekfGreek',
+    year: '2025',
+    tags: ['DSA Interview', 'Portfolio Development'],
+    color: 'from-green-500 to-emerald-500',
+  },
+  {
     title: 'MySQL Certification',
     issuer: 'HackerRank',
     year: '2025',
