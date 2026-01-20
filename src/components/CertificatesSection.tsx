@@ -2,6 +2,13 @@ import { Award, ExternalLink } from 'lucide-react';
 
 const certificates = [
   {
+    title: 'Published Paper',
+    issuer: 'INTERNATIONAL JOURNAL OF NOVEL RESEARCH AND DEVELOPMENT (IJNRD)',
+    year: '2026',
+    tags: ['AI', 'Project', 'Integrated Acedemic Management'],
+    color: 'from-blue-500 to-cyan-500',
+  },
+  {
     title: 'Microsoft Azure AI Essentials',
     issuer: 'Microsoft & LinkedIn',
     year: '2025',
