@@ -6,8 +6,7 @@ import ParticleBackground from '@/components/ParticleBackground';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
-import ExperienceSection from '@/components/ExperienceSection';
-import ServicesSection from '@/components/ServicesSection';
+import ExperienceServicesSection from '@/components/ExperienceServicesSection';
 import ProjectsSection from '@/components/ProjectsSection';
 import ResearchSection from '@/components/ResearchSection';
 import CertificatesSection from '@/components/CertificatesSection';
@@ -42,8 +41,7 @@ const Index = () => {
         <main>
           <HeroSection />
           <AboutSection />
-          <ExperienceSection />
-          <ServicesSection />
+          <ExperienceServicesSection />
           <ProjectsSection />
           <ResearchSection />
           <CertificatesSection />
