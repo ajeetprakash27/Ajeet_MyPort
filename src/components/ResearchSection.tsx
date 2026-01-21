@@ -1,7 +1,9 @@
 import { FileText, Award, ExternalLink, Calendar, Users, BookOpen } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useNavigate } from 'react-router-dom';
 
 const ResearchSection = () => {
+  const navigate = useNavigate();
   const publication = {
     title: 'Integrated Academic Management & Learning Hub With AI Chatbot and Surveillance',
     journal: 'International Journal of Novel Research and Development (IJNRD)',
@@ -128,7 +130,7 @@ const ResearchSection = () => {
             <Button
               variant="neon"
               className="gap-2"
-              onClick={() => window.open(publication.paperUrl, '_blank')}
+              onClick={() => navigate(`/view?file=${encodeURIComponent(publication.paperUrl)}&title=${encodeURIComponent('Research Paper - ' + publication.title)}`)}
             >
               <FileText size={18} />
               Read Full Paper
@@ -136,7 +138,7 @@ const ResearchSection = () => {
             <Button
               variant="glass"
               className="gap-2"
-              onClick={() => window.open(publication.certificateUrl, '_blank')}
+              onClick={() => navigate(`/view?file=${encodeURIComponent(publication.certificateUrl)}&title=${encodeURIComponent('Publication Certificate')}`)}
             >
               <Award size={18} />
               View Certificate
