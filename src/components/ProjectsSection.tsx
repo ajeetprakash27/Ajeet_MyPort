@@ -33,14 +33,6 @@ const projects = [
     github: 'https://github.com/ajeetprakash27/airline-management-system',
   },
   {
-    title: 'Human Face Recognition & Detection',
-    description: 'Real-time face detection with computer vision. Identifies facial features and distinguishes human faces from other objects using advanced algorithms.',
-    image: projectFace,
-    technologies: ['Python', 'OpenCV', 'NumPy', 'Machine Learning'],
-    category: 'AI/ML',
-    github: 'https://github.com/ajeetprakash27/Face--Detection',
-  },
-  {
     title: 'Deep Research Agent',
     description: 'Automated multi-source research AI that generates structured, citation-rich reports. Features real-time progress UI and downloadable Markdown output.',
     image: projectResearch,
