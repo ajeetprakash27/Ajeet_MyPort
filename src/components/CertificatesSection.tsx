@@ -4,11 +4,13 @@ import { Award, ExternalLink } from "lucide-react";
 const issuerIcons = {
   Microsoft: "/icons/MS.jpeg",
   LinkedIn: "/icons/LKD.jpeg",
-  AWS: "/icons/AWS.jpef",
+  AWS: "/icons/AWS.jpeg",
   Google: "/icons/GG.jpeg",
   IBM: "/icons/IBM.jpeg", // add later if you upload ibm icon
   HackerRank: "/icons/HR.jpeg",
   Forage: "/icons/FG.jpeg",
+  Udemy: "/icons/UD.jpeg",
+  GreekfGreek: "/icons/GFG.jpeg",
 };
 
 const certificates = [
@@ -73,6 +75,7 @@ const certificates = [
     year: '2025',
     tags: ['DSA Interview', 'Portfolio Development'],
     color: 'from-green-500 to-emerald-500',
+    icon: issuerIcons.GreekfGreek,
   },
   {
     title: "MySQL Certification",
@@ -88,6 +91,7 @@ const certificates = [
     year: '2025',
     tags: ['Python', 'Programming'],
     color: 'from-yellow-500 to-orange-500',
+    icon: issuerIcons.Udemy,
   },
   {
     title: 'Mastercard – Cybersecurity Job Simulation',
