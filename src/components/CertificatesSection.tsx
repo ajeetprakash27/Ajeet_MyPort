@@ -2,12 +2,13 @@ import { Award, ExternalLink } from "lucide-react";
 
 // 🔹 Map issuer → icon path
 const issuerIcons = {
-  Microsoft: "/icons/microsoft.png",
-  LinkedIn: "/icons/linkedin.jpg",
-  AWS: "/icons/aws.png",
-  Google: "/icons/google.png",
-  IBM: "/icons/ibm.png", // add later if you upload ibm icon
-  HackerRank: "/icons/hackerrank.png",
+  Microsoft: "/icons/MS.jpeg",
+  LinkedIn: "/icons/LKD.jpeg",
+  AWS: "/icons/AWS.jpef",
+  Google: "/icons/GG.jpeg",
+  IBM: "/icons/IBM.jpeg", // add later if you upload ibm icon
+  HackerRank: "/icons/HR.jpeg",
+  Forage: "/icons/FG.jpeg",
 };
 
 const certificates = [
@@ -66,6 +67,13 @@ const certificates = [
     color: "from-green-500 to-emerald-500",
     icon: issuerIcons.LinkedIn,
   },
+   {
+    title: 'GreekfGreek Workshop',
+    issuer: 'GreekfGreek',
+    year: '2025',
+    tags: ['DSA Interview', 'Portfolio Development'],
+    color: 'from-green-500 to-emerald-500',
+  },
   {
     title: "MySQL Certification",
     issuer: "HackerRank",
@@ -73,6 +81,37 @@ const certificates = [
     tags: ["Database", "SQL"],
     color: "from-orange-500 to-amber-500",
     icon: issuerIcons.HackerRank,
+  },
+   {
+    title: 'Python Programming',
+    issuer: 'Udemy',
+    year: '2025',
+    tags: ['Python', 'Programming'],
+    color: 'from-yellow-500 to-orange-500',
+  },
+  {
+    title: 'Mastercard – Cybersecurity Job Simulation',
+    issuer: 'Forage',
+    year: '2024',
+    tags: ['Cybersecurity'],
+    color: 'from-orange-500 to-amber-500',
+    icon: issuerIcons.Forage,
+  },
+  {
+    title: 'Cognizant - Agile Methodology Job Simulation',
+    issuer: 'Forage',
+    year: '2023',
+    tags: ['Agile Methodology'],
+    color: 'from-purple-500 to-pink-500',
+    icon: issuerIcons.Forage,
+  },
+  {
+    title: 'Accenture North America – Data Analytics and Visualization Job Simulation',
+    issuer: 'Forage',
+    year: '2023',
+    tags: ['Data Visualization'],
+    color: 'from-red-500 to-rose-500',
+    icon: issuerIcons.Forage,
   },
 ];
 
