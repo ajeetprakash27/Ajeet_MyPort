@@ -6,9 +6,18 @@ import projectResearch from '@/assets/project-research.jpg';
 import projectPodcast from '@/assets/project-podcast.jpg';
 import projectAichess from '@/assets/project-aichess.jpg';
 import projectAimedical from '@/assets/project-aimedical.jpg';
+import projectGraphRAGPipeline from '@/assets/project-graphrag pipeline.jpeg';
 
 const projects = [
   {
+    title: 'GraphRAG Pipeline for Smart Retrieval',
+    description: 'A GraphRAG-based intelligent retrieval system that combines Vector Search (RAG) with a Knowledge Graph to answer user queries with relationship-aware context from documents.',
+    image: projectGraphRAGPipeline,
+    technologies: ['Python','OpenAI GPT & Embeddings',' LangChainChromaDB (Vector Database)','Neo4j (Knowledge Graph)','FastAPI (Backend API)','Uvicorn'],
+    category: ['AI/ML','Retrieval Augmented Generation (RAG)','Knowledge Graphs','NLP & Document Intelligence','Backend API Development'],
+    github: 'https://github.com/ajeetprakash27/Graph_rag_project.git',
+  },
+   {
     title: 'Medical Imaging Diagnosis Agent',
     description: 'An AI-powered web application for analyzing medical imaging data using advanced computer vision and radiological expertise. Built with Streamlit, Google Gemini AI, and Agno framework.',
     image: projectAimedical,
