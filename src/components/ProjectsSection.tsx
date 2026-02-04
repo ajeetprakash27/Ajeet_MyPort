@@ -7,9 +7,18 @@ import projectPodcast from '@/assets/project-podcast.jpg';
 import projectAichess from '@/assets/project-aichess.jpg';
 import projectAimedical from '@/assets/project-aimedical.jpg';
 import projectGraphRAGPipeline from '@/assets/project-graphrag pipeline.jpeg';
+import projectAiassitant from '@/assets/project-aiassitant.jpeg';
 
 const projects = [
   {
+  title: 'Real-Time AI Assistant Using RAG + LangChain',
+  description: 'A real-time AI assistant that answers user questions from custom PDF documents using Retrieval Augmented Generation (RAG). It performs semantic search with vector embeddings (FAISS) and generates accurate, context-aware responses using Google Gemini and LangChain, exposed through a FastAPI backend.',
+  image: projectAiassitant,
+  technologies: ['Python','LangChain','FAISS (Vector Database)','Google Gemini (LLM & Embeddings)','FastAPI (Backend API)','PyPDF (Document Loader)','Uvicorn'],
+  category: ['Artificial Intelligence', 'Retrieval Augmented Generation (RAG)','Generative AI','NLP & Document Intelligence','Backend API Development'],
+  github: 'https://github.com/ajeetprakash27/RAG-AI-Assistant.git',
+  },
+    {
     title: 'GraphRAG Pipeline for Smart Retrieval',
     description: 'A GraphRAG-based intelligent retrieval system that combines Vector Search (RAG) with a Knowledge Graph to answer user queries with relationship-aware context from documents.',
     image: projectGraphRAGPipeline,
