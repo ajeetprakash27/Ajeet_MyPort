@@ -4,6 +4,44 @@ import { Briefcase, Calendar, MapPin, Code, Database, Layout, Server, Globe, Bot
 
 const experiences = [
   {
+  title: 'Open Source Developer',
+  company: 'GSSoC JEC Jabalpur',
+  location: 'Remote',
+  period: 'April 2026 – Present',
+  description: [
+    'Selected as a contributor for GirlScript Summer of Code 2026, working on real-world open-source projects',
+    'Collaborated with a diverse developer community to improve coding, collaboration, and problem-solving skills',
+    'Gained hands-on experience with version control systems like Git and GitHub',
+    'Enhanced project management and teamwork efficiency through active contributions',
+  ],
+  tools: [
+    { name: 'Git', icon: Code },
+    { name: 'GitHub', icon: Server },
+    { name: 'Open Source', icon: Layout },
+    { name: 'Collaboration', icon: Users },
+  ],
+  technologies: ['Git', 'GitHub', 'Open Source', 'Collaboration'],
+},
+  {
+  title: 'Operations Manager / Intern',
+  company: 'Zepto',
+  location: 'On-site',
+  period: 'Dec 2025 – Present',
+  description: [
+    'Worked in a fast-paced startup environment, gaining hands-on operational and team management experience',
+    'Collaborated with cross-functional teams to improve workflow efficiency and execution',
+    'Managed daily operations and contributed to process optimization',
+    'Developed strong problem-solving, communication, and leadership skills in a dynamic environment',
+  ],
+  tools: [
+    { name: 'Operations', icon: Server },
+    { name: 'Team Management', icon: Users },
+    { name: 'Workflow Optimization', icon: Layout },
+    { name: 'Communication', icon: MessageSquare },
+  ],
+  technologies: ['Operations Management', 'Team Collaboration', 'Process Optimization'],
+},
+   {
     title: 'Web Developer Intern',
     company: 'Cognifyz Technologies',
     location: 'Remote',
