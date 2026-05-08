@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Briefcase, Calendar, MapPin, Code, Database, Layout, Server, Globe, Bot, Brain, Search, Palette, Workflow } from 'lucide-react';
+import { Briefcase, Calendar, MapPin, Code, Database, Layout, Server, Globe, Bot, Brain, Search, Palette, Workflow, Users, MessageSquare } from 'lucide-react';
 
 const experiences = [
   {
